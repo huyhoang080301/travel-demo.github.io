@@ -332,7 +332,7 @@ input:checked ~ .select-navigation {
     position: relative;
     padding-top: 78%;
     background-color: red;
-    background: url(/assets/img/SLIDER/slider.jpg) top center/cover no-repeat ;
+    background: url(../img/SLIDER/slider.jpg) top center/cover no-repeat ;
 }
 
 .slider__overlay {
@@ -475,7 +475,7 @@ input:checked ~ .select-navigation {
 }
 
 .destination-1 {
-    
+   
     background: url(../img/content/destination-1.jpg) top center/cover no-repeat;
 }
 .destination-2 {
