@@ -227,11 +227,10 @@ input:checked ~ .select-navigation {
     display: block;
     position: relative;
     background-color: #ffd205;
-    background-color: #ffd205;
     top: -9px;
-    left: 28.4%;
+    left: 29.4%;
     height: 5px;
-    width: 132px;
+    width: 120px;
     z-index: -1;
     
 }
@@ -368,7 +367,7 @@ input:checked ~ .select-navigation {
     top: 9px;
     left: 69%;
     height: 5px;
-    width: 196px;
+    width: 181px;
     z-index: -1;
 }
 
@@ -465,7 +464,7 @@ input:checked ~ .select-navigation {
     top: 1px;
     left: 44%;
     height: 5px;
-    width: 268px;
+    width: 262px;
     z-index: -1;
 }
 
@@ -648,10 +647,10 @@ input:checked ~ .select-navigation {
     display: block;
     position: absolute;
     background-color: #f76570;
-    top: calc( 100% + 9.8px);
-    left: 41%;
+    top: calc( 100% + 7.2px);
+    left: 32%;
     height: 5px;
-    width: 185px;
+    width: 157px;
     z-index: -1;
 }
 
@@ -702,9 +701,9 @@ input:checked ~ .select-navigation {
     position: absolute;
     background-color: #14b9d5;
     top: calc( 100% + -6.2px);
-    left: 49%;
+    left: 46.7%;
     height: 6px;
-    width: 160px;
+    width: 148px;
     z-index: -1;
 }
 
@@ -767,7 +766,9 @@ input:checked ~ .select-navigation {
 .page3__btn {
     background-color: #1bbc9b;
     color: var(--white-color);
-    padding: 22px 45px;
+    padding: 22px 43px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 /* count down */
@@ -850,7 +851,8 @@ input:checked ~ .select-navigation {
 }
 
 .page3__footer-text {
-
+    position: relative;
+    top: 6px;
 }
 
 .page3__footer-text__heading {
@@ -892,6 +894,7 @@ input:checked ~ .select-navigation {
 
 .discovery__text {
     font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .discovery__heading {
@@ -900,11 +903,12 @@ input:checked ~ .select-navigation {
 
 .discovery__link-city,
 .discovery__link-nature {
-    font-size: 1.4rem;
-   background-color: #fff;
-   padding: 21.8px 39px;
-   font-weight: 300;
-   margin-top: 14px;
+    font-size: 1.35rem;
+    background-color: #fff;
+    padding: 20px 37px;
+    font-weight: 400;
+    margin-top: 14px;
+    letter-spacing: 2px;
 }
 
 .discovery__link-city {
@@ -922,9 +926,9 @@ input:checked ~ .select-navigation {
     position: relative;
     background-color: #1bbc9b;
     top: 1px;
-    left: 46.2%;
+    left: 46.4%;
     height: 5px;
-    width: 206px;
+    width: 190px;
     z-index: -1;
 }
 
@@ -1016,17 +1020,22 @@ input:checked ~ .select-navigation {
 
 }
 
+.page5-body__old-price {
+    display: none;
+}
+
 .page5-container--sale .page5-body__old-price {
         text-decoration: line-through;
         color: #9a9a9a;
         font-size: 2rem;
         margin-right: 10px;
+        display: inline-block;
 }
 .page5-body__descr {
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: #9a9a9a;
-    letter-spacing: 2.4px;
+    letter-spacing: 2.3px;
     margin: 28px 0;
 }
 
