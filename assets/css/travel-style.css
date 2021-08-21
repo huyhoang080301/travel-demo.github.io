@@ -167,10 +167,23 @@
     width: 350px;
     height: 100vh;
     background-color: var(--white-color);
-    display: none;
+    transform: translateX(100%);
+    
     overflow: auto;
+    transition: transform linear 0.3s ;
+   
+    will-change: transform , opacity;
+    
 }
-
+input:checked ~ .select-navigation {
+    
+    
+    
+    transform: translateX(0%);
+    
+   
+    
+}
 .close-icon {
     
     font-size: 1.2rem;
@@ -185,22 +198,9 @@
 }
 
 
-input:checked ~ .select-navigation {
-    display: block;
-    animation: SlowIn linear 0.3s;
-}
 
-@keyframes SlowIn {
-    from {
-        
-        transform: translateX(85%);
-    }
 
-    to {
-        
-        transform: translateX(0);
-    }
-}
+
 
 .select-navigation__container {
     padding: 20px ;
@@ -401,7 +401,7 @@ input:checked ~ .select-navigation {
     border-radius: 20px;
     padding: 3px 25px;
     width: 100%;
-  
+    background-color: #f7f7f7;
 }
 
 
