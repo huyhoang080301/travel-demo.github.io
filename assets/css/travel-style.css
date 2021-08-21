@@ -163,23 +163,23 @@
 .select-navigation {   
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: -24%;
     width: 350px;
     height: 100vh;
     background-color: var(--white-color);
-    transform: translateX(100%);
-    
+
+    /* display: none; */
     overflow: auto;
-    transition: transform linear 0.3s ;
+    transition: right linear 0.3s ;
    
-    will-change: transform , opacity;
+    will-change: right;
     
 }
 input:checked ~ .select-navigation {
     
     
-    
-    transform: translateX(0%);
+    display: block;
+    right: 0%;
     
    
     
