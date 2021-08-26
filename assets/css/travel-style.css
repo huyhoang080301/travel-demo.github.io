@@ -1,11 +1,16 @@
+#main {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 .header {
     position: relative;
     z-index: 2;
     display: flex;
     align-items: center;
-    min-height: 100px;
+    min-height: var(--header-height);
     background-color: var(--background-color);
-    flex-direction: row;
+   
     margin-bottom: -386px;
 }
 
@@ -14,6 +19,7 @@
     align-items: center;
     justify-content: space-between;  
     padding: 0 65px;
+    margin: 0 auto;
 }
 
 .lable-web {
@@ -54,6 +60,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;  
     text-decoration: none;
+    display: block;
 }
 .navbar-btn {
     color: var(--white-color);
@@ -161,29 +168,22 @@
 }
 
 .select-navigation {   
+    --width:350px;
     position: fixed;
     top: 0px;
-    right: -24%;
-    width: 350px;
+    right: calc(var(--width) * -1 );
+    width: var(--width);
     height: 100vh;
     background-color: var(--white-color);
 
     /* display: none; */
     overflow: auto;
-    transition: right linear 0.3s ;
-   
-    will-change: right;
-    
+    /* transition: right linear 0.3s ; */
+  
+    opacity: 0.5;
+    -webkit-transition: all linear 0.3s  ;
 }
-input:checked ~ .select-navigation {
-    
-    
-    display: block;
-    right: 0%;
-    
-   
-    
-}
+
 .close-icon {
     
     font-size: 1.2rem;
@@ -469,7 +469,7 @@ input:checked ~ .select-navigation {
 }
 
 .content__destination  {
-    margin-bottom: 76px;
+    padding-bottom: 76px;
   
 }
 
@@ -766,9 +766,11 @@ input:checked ~ .select-navigation {
 .page3__btn {
     background-color: #1bbc9b;
     color: var(--white-color);
-    padding: 22px 43px;
+    padding: 13px 26px;
     letter-spacing: 2px;
     font-weight: 500;
+    border-radius: 20px;
+    display: inline;
 }
 
 /* count down */
@@ -878,13 +880,13 @@ input:checked ~ .select-navigation {
 
 /* Discovery */
 .discovery-page {
-    display: flex;
-    height: 270px;
+   
+   
     margin-bottom: 100px;
 }
 
 .discovery {
-    width: 50%;
+   padding: 16px 0;
     display: flex;
     align-items: center;
     justify-content: center;

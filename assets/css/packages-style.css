@@ -101,6 +101,7 @@
 .choose-bar-area {
     position: relative;
     margin: 26px 0 20px;
+    cursor: pointer;;
 }   
 
 .choose-bar-area__bar {

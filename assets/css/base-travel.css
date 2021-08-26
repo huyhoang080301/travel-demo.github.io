@@ -7,6 +7,7 @@
     --text-color:#9a9a9a;
     --title-color:#555555;
     --background-color:rgba(0, 0 ,0 ,0.12);
+    --header-height:100px;
 }
 html {
     font-size: 62.5%;
@@ -16,46 +17,7 @@ html {
     box-sizing: border-box;
 }
 
-/* grid */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__fill-width {
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-}
 
-.grid__col-4 {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: calc(4/12 * 100%);
-}
-
-.grid__col-8 {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: calc(8/12 * 100%);
-}
-
-
-.grid__col-half{
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 50%;
-}
-
-.grid__col-third{
-    padding-left: 15px;
-    padding-right: 15px;
-    width: calc(100% / 3);
-}
 /* button */
 .btn {
     display: flex;
@@ -70,6 +32,9 @@ html {
     height:36px ;
     background-color: #fff;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
 }
 .btn-small {
@@ -88,11 +53,15 @@ html {
     --height:36px ;
     line-height: var(--height);
     cursor: pointer;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
 }
 
 .btn-large {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-width: 92px;
     height: var(--height);
     border-radius: 20px;
@@ -102,6 +71,9 @@ html {
     --height:44px ;
     line-height: var(--height);
     cursor: pointer;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
 }
 /* input */
 .input {
