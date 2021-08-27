@@ -101,7 +101,11 @@
     font-size: 3.5rem;
     
 }
-
+.menu-list-navbar__icon-mobie {
+    color: var(--white-color);
+    font-size: 3.5rem;
+    
+}
 /* subnav */
 .navbar-item:hover .subnav{
     display: block;
@@ -217,6 +221,12 @@
   
     opacity: 0.5;
     -webkit-transition: all linear 0.3s  ;
+}
+
+.nav-select:checked ~ .select-navigation {
+        opacity: 1;
+        display: block;
+        right: 0%;   
 }
 
 .close-icon {

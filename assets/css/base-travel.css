@@ -8,6 +8,7 @@
     --title-color:#555555;
     --background-color:rgba(0, 0 ,0 ,0.12);
     --header-height:100px;
+    --primary-color:#ff9b05;
 }
 html {
     font-size: 62.5%;

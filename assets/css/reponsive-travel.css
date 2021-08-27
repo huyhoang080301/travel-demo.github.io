@@ -4,7 +4,7 @@
         display: none;
     }
 
-    input:checked ~ .select-navigation {
+    .nav-select:checked ~ .select-navigation {
     
         opacity: 1;
         display: block;
@@ -14,7 +14,10 @@
 /*mobie va tablet va tablet pro*/ 
 @media  (max-width:63.9375em) { 
     
-
+    #main {
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
     
     .hide-on-mobie-tablet {
         display: none;
@@ -54,7 +57,7 @@
             -webkit-transition: all linear 0.3s;
         }
     
-        input:checked ~ .navbar { 
+        .nav-select-mobie:checked ~ .navbar { 
             opacity: 1;
             right: 0%;        
         }
@@ -71,13 +74,17 @@
             padding: 26px 0 0 0;
             width: 100%;
         }
-    
+        
+       
         .navbar-link {
             font-size: 2.4rem;
             font-weight: 700;
             padding-left: 20px;
         }
-    
+        
+        .navbar-link:hover {
+            color:var(--primary-color);
+        }
         .subnav,
         .subnav-item__subnav{
             display: block;
@@ -102,8 +109,18 @@
         .subnav-item__subnav-item {
             border: none;
             display: block;
+            
         }
-    
+
+        .subnav li:hover {
+            background-color: rgba(85, 85, 85,1);
+        }
+
+        .subnav li a:hover {
+           color: var(--primary-color);
+           transform: translateX(-40px);
+           transition: transform linear 0.2s;
+        }
         .slider {
             margin-top: calc(var(--header-height) - 40px);
             padding-top: 180%;
@@ -258,7 +275,7 @@
         -webkit-transition: all linear 0.3s;
     }
 
-    input:checked ~ .navbar { 
+    .nav-select-mobie:checked ~ .navbar { 
         opacity: 1;
         right: 0%;        
     }
@@ -418,7 +435,7 @@
     .hide-on-mobie {
         display: none;
     }
-    .menu-list-navbar__icon {
+    .menu-list-navbar__icon-mobie {
         margin-left: auto;
     }
     .header__container {
